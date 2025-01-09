@@ -1,0 +1,508 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: "General Sans Regular";
+    text-decoration: none;   
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #fff;
+    border:1px solid green
+}
+.login{
+    opacity: .6;
+    border: 1px solid  #303030;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+}
+.navbar-brand {
+    margin-left: 1rem;
+    padding-right: 50%;
+}
+
+.navbar>.nav-link:hover,.navbar-brand:hover{
+    color:green;
+}
+
+.navbar>.nav-link{
+    color: black;
+}
+
+/* 2nd part */
+
+.page{
+    padding-top: 190px;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 60px;
+}
+.page>.img>img{
+    height: 60vh;
+    width:80vh;
+   width: fit-content;
+
+} 
+
+.quote{
+    text-transform: uppercase;
+    word-spacing: 0.2em;
+    opacity: 0.8;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.quote1{
+    margin-top: 150px;
+}
+
+.quote2{
+    margin-left: 70px;
+    
+}
+.page>.content>p{
+    padding-top: 3vh;
+    font-size: 14px;
+}
+
+/* Button */
+.content>p>#appointment{
+    display: block;
+    margin-top: 5vh;
+    padding: .8vh 4vh;
+    border-radius: 8px;
+    font-size: 1vw;
+    color: black;
+    background-color: #fff;
+}
+.content>p>#appointment:hover{
+    background-color: #199FD9;
+    color: #fff;
+}
+
+/* 3rd part */
+
+.special{
+    margin-top: 150px;
+    margin-left: 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.special>.content>p{
+    font-size: 13px;
+    opacity: 0.4;
+}
+.special>.button1{
+    margin-right: 70px;
+    margin-top: 25px;
+
+}
+
+.special>.button1>button{
+color: black;
+background-color: #fff;
+padding-left:px;
+padding-right:10px;
+border-radius: 6px;
+padding: .5vh 2vh;
+}
+
+#specialities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:40px 100px 0 100px;
+ 
+  }
+  .card:hover {
+    transform: translateY(-5px);
+}
+  
+  .card {
+    position: relative;
+    width: 180px;
+    height: 240px;
+    margin: 3px 2px 6px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 60%;
+    height: 50%;
+    margin-left:25px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .rupee{
+    opacity: 0.7;
+    margin-top: 5px;
+  }
+  .consult{
+    position: absolute;
+    top: 80%;
+    left: 45px;
+    color: #199FD9;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* 4th part */
+
+  #common-health-issues {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 10px 40px 100px;
+  }
+  
+  .card1 {
+    position: relative;
+    width: 35vh;
+    height: 40vh;
+    margin: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+  }
+  .card1:hover {
+    transform: translateY(-5px);
+}
+  .card1 img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .card1 p {
+    opacity: 0.7;
+    margin-top: 5px;
+  }
+  
+  .card1>.consult1{
+    position: absolute;
+    top: 90%;
+    color: #199FD9;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 15px;
+  }
+
+  /* 5th part doctor */
+.our_doctor{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+.doctor_content{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doctor_content>h2{
+    opacity: 0.8;
+    margin-left: 100px;
+    margin-bottom: 70px;
+
+}
+.doctor{
+    width: 270px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    float: left;
+    line-height: 3vh;
+   
+  }
+  .doctor:hover {
+    transform: translateY(-5px);
+}
+  
+  .doctor img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    padding-right: 10px;
+    float: left;
+  }
+  
+  .doctor p {
+    text-align: start;
+    font-size: 13px;
+  }
+
+  /* part 5 services */
+  .service_content{
+    margin-top: 50px;
+    margin-left: 100px;
+    /* font-size:20px */
+  }
+  .service-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.service-card {
+    background-color: #96d3bf; /* Light Green */
+    color: #1E1E28;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.service-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+/* Style for the pink service card */
+.service-card:nth-child(2) {
+    background-color: #ffb6c1; /* Light Pink */
+}
+
+/* Hover effect for service cards */
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+  /* 6th part acheivenments */
+  .acheivements{
+    width:100%;
+    height:100px;
+    background-color:  #303030;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  .acheivements>div{
+    margin-left: 100px;
+    margin-right:100px;
+    margin-right: 30px;
+  }
+  .acheivements>.top{
+    margin-right: 100px;
+  }
+  .user_experience_content{
+    margin-top:70px;
+    margin-left: 100px;
+    opacity:0.9;
+    font-size: 20px;
+}
+
+.user_experience{
+    margin-top:40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity:0.9;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+
+/* Style for the user experience card */
+.user-experience-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: left;
+  }
+  .user-experience-card:hover {
+    transform: translateY(-5px);
+}
+  
+  /* Style for user's avatar and name */
+  .user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Style for user's comment */
+  .user-comment {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Style for user's rating */
+  .user-rating {
+    font-size: 18px;
+  }
+  
+  /* Style for star icons (you can use an appropriate star icon) */
+  .star {
+    color: #FFD700; /* Yellow color for stars */
+  }
+  
+  /* 6th part */
+  .acheivements2{
+    width:100%;
+    height:120px;
+    background-color: #303030;
+    border: 1px solid black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    margin-top: 40px;
+  }
+
+  .under_ach{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .ach_button{
+    padding: 5px 25px  5px 25px ;
+    border-radius: 5px;
+    background-color: #199FD9;
+  }
+
+  .trust{
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 0.9;
+  }
+  .trust_content{
+    margin-left: 100px;
+    margin-top: 30px;
+    line-height: 24px;
+    opacity: .5;
+    font-size: 15px;
+    margin-bottom: 70px;
+  }
+
+  /* footer final part */
+
+  .footer {
+    background-color: #1E1E28;
+    color: white;
+    padding: 30px 0;
+    font-family: "General Sans Regular";
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #96d3bf;
+    transition: color 0.3s;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #199FD9;
+  }
+  
+  .footer-contact h4,
+  .footer-social h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-social ul li {
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 24px;
+  }
+  
+  .footer-social ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-social ul li a:hover {
+    color: #199FD9;
+  }
+  .footer-social{
+    margin-left: 130px;
+  }  

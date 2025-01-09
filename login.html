@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Doctor Registration Form</title>
+</head>
+<body>
+    <div class="user-container">
+        <div class="image-and-form">
+            <!-- Doctor Image Section -->
+            <div class="doctor-image">
+                <div class="image-background">
+                    <img src="doctor1.png" alt="Doctor Image">
+                </div>
+            </div>
+
+            <!-- Vertical Line -->
+            <div class="vertical-line"></div>
+
+            <!-- Registration Form Section -->
+            <div class="form-section">
+                <form class="signup-form" action="data.php" method="post">
+                    <h2>Registration</h2>
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit">Submit</button>  
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Not User Section -->
+    <div class="not_user">
+        <p>Not the User? </p><a href="admin.html" class="adminButton">Admin Login</a>
+    </div>
+
+</body>
+</html>

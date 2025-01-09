@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Call</title>
+    <script src="https://meet.jit.si/external_api.js"></script>
+    <style>
+        .info{
+            margin-top:4vh;
+            margin-bottom: 10vh;
+        }
+        #email{
+            margin-bottom: 2vh;
+        }
+        .overall{
+            margin-left: 5vh;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="overall">
+            <div class="info">
+        <h2><label for="email">Email</label></h2>
+        <input type="email" id="email" placeholder="email">
+
+        <div><button id="video-call">Start Video Call</button></div>
+
+         </div>
+    
+        <div id="jitsi-container"></div>
+
+    </div>
+
+    <script>
+        const domain = 'meet.jit.si';
+        const options = {
+            roomName: 'YourUniqueRoomName', 
+            width: '80%',
+            height: '500px',
+            parentNode: document.querySelector('#jitsi-container'),
+        };
+
+        const api = new JitsiMeetExternalAPI(domain, options);
+
+        document.querySelector('#video-call').addEventListener('click', () => {
+            const userEmail = document.querySelector('#email').value;
+
+            // Open a new email with the video call link in the body
+            const videoCallLink = `https://${domain}/${options.roomName}`;
+            const emailBody = `Click this link to join the video call: ${videoCallLink}`;
+            window.location.href = `mailto:${userEmail}?subject=Video Call Link&body=${encodeURIComponent(emailBody)}`;
+
+            // Start the video call
+            api.executeCommand('startCall');
+        });
+    </script>
+    
+</body>
+</html>

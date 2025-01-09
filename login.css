@@ -1,0 +1,205 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background styling */
+body::before {
+  content: "";
+  background-image: url("back_log.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Main container for user login */
+.user-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 58vh;
+  width: 45%;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  left: 27.5%;
+  top: 20%;
+  z-index: 1;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Flexbox for image and form */
+.image-and-form {
+  display: flex;
+  width: 100%;
+}
+
+/* Styling for the doctor image section */
+.doctor-image {
+  flex: 1;
+  text-align: center;
+  padding: 10%;
+  background-color: #ddd;
+}
+
+.doctor-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Vertical dashed line between image and form */
+.vertical-line {
+  border-left: 2px dashed black;
+  height: 90%;
+  position: absolute;
+  left: 40%;
+  margin-left: -3px;
+  top: 5%;
+  opacity: 0.6;
+}
+
+/* Form section styling */
+.form-section {
+  flex: 1;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #199FD9;
+  outline: none;
+}
+
+button.submit {
+  background-color: #199FD9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+  background-color: #007bbd;
+}
+
+/* Admin login link */
+.adminButton {
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  color: #199FD9;
+  text-align: center;
+  font-size: 14px;
+}
+
+.adminButton:hover {
+  color: #007bbd;
+  text-decoration: underline;
+}
+
+/* Message below the form */
+.not_user {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  font-size: 16px;
+  color: #555;
+  z-index: 1;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .user-container {
+      width: 90%;
+      left: 5%;
+      top: 15%;
+      flex-direction: column;
+      height: auto;
+  }
+
+  .image-and-form {
+      flex-direction: column;
+  }
+
+  .vertical-line {
+      display: none;
+  }
+
+  .doctor-image {
+      padding: 5%;
+  }
+
+  .form-section {
+      padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+      font-size: 20px;
+  }
+
+  input {
+      font-size: 14px;
+  }
+
+  button.submit {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .adminButton {
+      font-size: 12px;
+  }
+}
